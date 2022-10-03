@@ -1,0 +1,13 @@
+python==3.8.13
+numpy==1.22.4
+PyYAML==6.0
+scikit-learn==0.24.2
+scipy==1.8.1
+tensorboardX==2.5.1
+torch==1.10.2
+torch-cluster==1.6.0
+torch-geometric==2.0.4
+torch-scatter==2.0.9
+torch-sparse==0.6.13
+tqdm==4.64.0
+mlflow==1.28.0

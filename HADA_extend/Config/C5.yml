@@ -1,0 +1,59 @@
+# GINE
+albef_dir: /mnt/data/itr2022/ALBEF_Output/flickr30k
+dot_dir: /mnt/data/itr2022/DOT_Output/flickr30k
+albef_augment_dir: /mnt/data/itr2022/ALBEF_AUG_Output/flickr30k
+pretrained_path: /home/nmduy/HADA/HADA_m/Output/C5/best.pth.tar
+ft_trans: [512]
+ft_gcn: [512]
+ft_com: [512]
+ft_itm: [1]
+type_gcn: GATv2
+concat: False # for TGCN and GATv2
+skip: True
+n_heads: 4
+l2_norm: True
+# act_func can be blank (no activate function), relu, swish
+act_func: gelu
+# weight edge
+wffx: -1
+wfc: 0.9
+wfcx: 0.7
+wcc: 1.1
+directed_graph: True
+# Optimizer
+optimizer_choice: adamw
+learning_rate: 0.00005
+batch_norm: True
+dropout: 0.7
+grad_clip: -1
+weight_decay: 0.02
+# Train
+mode_train: both
+batch_size: 20
+num_epoch: 100
+early_stop: 5
+thres_loss: 0.001
+temp: 0.07
+# momentum
+alpha: 0.4
+distill: False
+queue_size: 64000
+momentum: 0.995
+# plateau scheduler
+min_lr: 0.000005
+factor: 0.2
+patience: 4
+# cosine scheduler <-- if T0 > 0 else using plateau scheduler
+T0: 30
+Tmul: 2
+Tmax: -1
+# Margin Loss
+# cosine emb loss (contrastive)
+weight_emb_loss: 0
+# Negative loglikelihood classification (emb)
+weight_nll_loss: 1
+weight_itm_loss: 1
+margin_loss: 0.3
+device: cuda
+# Other
+out_dir: Output

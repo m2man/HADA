@@ -1,0 +1,8 @@
+*.pyc
+*.ipynb
+*/*.pth.tar
+*/Output/*
+.ipynb_checkpoints/
+__pycache__/
+MLFLow/
+mlruns/
