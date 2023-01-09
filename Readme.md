@@ -13,11 +13,14 @@ Remember to update the path in the config files in **HADA** folders. Then you ca
 
 ```python
 # Train
-python run_exp.py -cp HAMA_m_extend/Config/C5.yml -rm train
+python run_exp.py -cp HADA_m_extend/Config/C5.yml -rm train
 
 # Test
-python run_exp.py -cp HAMA_m_extend/Config/C5.yml -rm test
+python run_exp.py -cp HADA_m_extend/Config/C5.yml -rm test
 ```
+
+## LAVIS as Backbones
+We will update the repository for applying HADA on-the-top of [LAVIS](https://github.com/salesforce/LAVIS).
 
 ## Contact
 For any issue or comment, you can directly email me at manh.nguyen5@mail.dcu.ie
