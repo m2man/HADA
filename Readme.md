@@ -29,3 +29,14 @@ We created a sub-repository for applying HADA using [LAVIS](https://github.com/s
 
 ## Contact
 For any issue or comment, you can directly email me at manh.nguyen5@mail.dcu.ie
+
+For citation, you can add the bibtex as following:
+```
+@inproceedings{hada_ecir2023,
+  title={HADA: A Graph-based Amalgamation Framework in Image-text Retrieval},
+  author={Nguyen, Manh-Duy and Nguyen, Binh T and Gurrin, Cathal},
+  booktitle={Advances in Information Retrieval: 45th European Conference on Information Retrieval, ECIR 2023, Dublin, Ireland, April 2--6, 2023, Proceedings, Part I},
+  pages={717--731},
+  year={2023}
+}
+```
